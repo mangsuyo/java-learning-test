@@ -49,7 +49,7 @@ public class AssertJTest {
             final var expected = 3;
 
             // TODO: JUnit5의 assertEquals 메서드를 AssertJ의 isEqualTo 메서드로 변경해보세요.
-            assertEquals(expected, actual);
+            assertThat(actual).isEqualTo(expected);
         }
 
         /**
@@ -81,7 +81,7 @@ public class AssertJTest {
             final Object actual = null;
 
             // TODO: JUnit5의 assertNull 메서드를 AssertJ의 isNull 메서드로 변경해보세요.
-            assertNull(actual);
+            assertThat(actual).isNull();
         }
 
         /**
@@ -95,7 +95,7 @@ public class AssertJTest {
             final Object actual = new Object();
 
             // TODO: JUnit5의 assertNotNull 메서드를 AssertJ의 isNotNull 메서드로 변경해보세요.
-            assertNotNull(actual);
+            assertThat(actual).isNotNull();
         }
 
         /**
@@ -110,7 +110,7 @@ public class AssertJTest {
             final var expected = actual;
 
             // TODO: JUnit5의 assertSame 메서드를 AssertJ의 isSameAs 메서드로 변경해보세요.
-            assertSame(expected, actual);
+            assertThat(actual).isSameAs(expected);
         }
 
         /**
@@ -125,7 +125,7 @@ public class AssertJTest {
             final var unexpected = new Object();
 
             // TODO: JUnit5의 assertNotSame 메서드를 AssertJ의 isNotSameAs 메서드로 변경해보세요.
-            assertNotSame(unexpected, actual);
+            assertThat(actual).isNotSameAs(unexpected);
         }
 
         /*
